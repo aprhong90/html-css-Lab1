@@ -1,4 +1,182 @@
+/* resets */
+body,
+h1,
+p {
+  margin: 0;
+}
+
 body {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fafc;
+}
+h1 {
+  font-size: 15pt;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color:#69696a;
+}
+
+.nav-list {
+  padding: 0;
+}
+
+.nav-list li {
+  padding: 5px 0;
+  list-style: none;
+
+}
+
+.accent {
+  background-color: black;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nav-list .accent {
+  color: white
+}
+
+.title-main {
+  margin: 15px 0;
+  font-size: 25pt;
+}
+
+.call-to-action-text {
+  border-left: 3px solid black;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(247, 193, 162, 0.7);
+  padding: 20px 15px 20px 20px;
+}
+
+footer ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+footer a {
+  padding: 5px;
+  color: #69696a;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+  
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list a {
+    padding: 0 10px;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .chirpus-text {
+    flex: 1;
+  }
+
+  .circles {
+    flex: 1;
+  }
+
+  .circle-1 {
+    border-radius: 50%;
+    background: rgba(247,136,167,0.6);
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+    /* margin: 0; it doesn't work */
+    position: relative;
+    left: 58%;
+  
+
+   
+  }
+
+  .circle-2 {
+    border-radius: 50%;
+    background: rgba(247,193,162,0.7);
+    width: 150px;
+    height: 150px;
+    opacity: 0.8;
+    position: relative;
+    left: 75%;
+    bottom: 20%;
+  }
+
+  .circle-3 {
+    border-radius: 50%;
+    background: rgba(207,130,213,0.6);
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    position: relative;
+    left: 82%;
+    bottom: 70%;
+   
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body { 
   font-family: "Open Sans", sans-serif;
   background-color: #f9fafc;
   margin: 0;
@@ -56,12 +234,12 @@ footer {
   justify-content: space-between;
 }
 
-.links {
-  display: flex;
+.links /* or footer ul*/ {
+ /*  display: flex;
   color: #69696a;
   padding: 0;
 }
 
 .links li {
   padding: 0 15px;
-}
+} */
